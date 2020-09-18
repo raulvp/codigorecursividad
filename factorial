@@ -1,0 +1,24 @@
+
+package eddc5;
+
+public class EDDC5 {
+
+    
+    public static void main(String[] args) {
+       
+        //recursividad para factorial de n
+        int numeroDef = 6;
+        int numFact = factorial(numeroDef);
+        System.out.println("El factorial de "+numeroDef+"es ="+
+               numFact );
+        
+    }
+    
+    public static int factorial(int n){
+        if(n==0){
+            return 1;
+        }else{
+            return n*factorial(n-1);
+        }
+    }
+}
