@@ -1,0 +1,24 @@
+
+package eddc7;
+
+public class EDDC7 {
+
+    
+    public static void main(String[] args) {
+        int[]num = {2,5,6,2,3,4};
+        System.out.println("suma: "+sumArreglo(num,0));
+    }
+    
+    public static int sumArreglo(int[]arre,int cont){
+        int suma=0;
+        if(cont == arre.length){
+            return suma;
+        }else{
+            suma+=arre[cont];
+            return suma+sumArreglo(arre, cont+1);
+            
+        }
+        
+    }
+    
+}
