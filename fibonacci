@@ -1,0 +1,23 @@
+
+package eddc10;
+
+public class EDDC10 {
+
+    public static void main(String[] args) {
+        int numero = 10;
+        for(int i=0;i<numero;i++){
+            System.out.print(sucesionFib(i)+",");
+        }
+    }
+    
+    public static int sucesionFib(int num){
+        //caso base
+        if(num==0 || num == 1){
+            return num;
+        }
+        else{
+        return sucesionFib(num-1)+sucesionFib(num-2);
+        }
+    } 
+    
+}
