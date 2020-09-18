@@ -1,0 +1,21 @@
+
+package eddc4;
+
+public class EDDC4 {
+
+    public static void main(String[] args) {
+        
+        cuentaRegresiva(20);
+        
+       
+    }
+    //cuenta regresi va de un numero dado
+    public static void cuentaRegresiva(int numero){
+        System.out.println(""+numero);
+        if(numero>0){
+            cuentaRegresiva(numero-1);
+        }
+    }
+   
+    
+}
